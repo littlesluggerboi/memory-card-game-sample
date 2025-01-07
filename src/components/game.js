@@ -6,7 +6,7 @@
 export async function get(number=10) {
   try {
     const fetchedData = await fetch(
-      `http://api.magicthegathering.io/v1/cards?pageSize=${number}&random=true&contains=imageUrl`
+      `https://api.magicthegathering.io/v1/cards?pageSize=${number}&random=true&contains=imageUrl`
     );
     return await fetchedData.json();
   } catch (err) {
