@@ -1,0 +1,47 @@
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.img{
+    display: flex;
+}
+
+.img > img{
+    max-width: 800px;
+}
+
+
+.buttonGroup{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttonGroup button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100rem;
+}
+
+
+.buttonGroup button:nth-child(2n){
+    width: clamp(3rem, 12vw, 12rem);
+    height: clamp(3rem, 12vw, 12rem);
+}
+
+.buttonGroup button:nth-child(2n+1){
+    width: clamp(2rem, 8vw, 8rem);
+    height: clamp(2rem, 8vw, 8rem);
+    background-color: black;
+}
+
+
+.buttonGroup button:nth-child(2n+1) > img{
+    filter: invert(1);
+}

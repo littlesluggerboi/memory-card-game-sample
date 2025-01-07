@@ -1,0 +1,58 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 1rem;
+  gap: 2vh;
+  background-color: rgba(255, 255, 255, 0.63);
+  align-items: center;
+  padding: 5vh 8vw;
+}
+
+.screen > img {
+    width: clamp(7rem, 20vw, 400px);
+}
+
+.screen > h1 {
+  font-size: clamp(3rem, 10vw, 10rem);
+  line-height: 1;
+  font-weight: 400;
+  margin-top: max(-5vh, -5vw);
+}
+
+@media (min-width:1440px){
+    .screen > h1{
+        margin-top: max(-2vh, -2vw);
+    }
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonGroup button {
+  border-radius: 100rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonGroup button:nth-child(2n) {
+  width: clamp(3rem, 8vw, 8rem);
+  height: clamp(3rem, 8vw, 8rem);
+  margin: auto;
+}
+
+.buttonGroup button:nth-child(2n + 1) {
+  width: clamp(2rem, 5vw, 5rem);
+  height: clamp(2rem, 5vw, 5rem);
+  background-color: black;
+}
+
+.buttonGroup button:nth-child(2n + 1) > img {
+  filter: invert(1);
+}

@@ -1,0 +1,29 @@
+.functions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    bottom: 0;
+}
+
+.functions button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    max-width: 3rem;
+}
+
+.functions button > img{
+    filter: invert(1);
+}
+
+.message{
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+}

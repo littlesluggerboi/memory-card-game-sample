@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "goudy";
+  src: url("./assets/fonts/goudy_bookletter_1911-webfont.woff2") format("woff2"),
+    url("./assets/fonts/goudy_bookletter_1911-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: goudy, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+  background-image: 
+  radial-gradient(
+      transparent 0%,
+      transparent 70%,
+      rgba(134, 60, 0, 0.75)
+    ), 
+    url("./assets/images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+body, div#root{
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+header img {
+  max-width: 24rem;
+}
+
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width:850px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1{
+  text-align: center;
+}
+

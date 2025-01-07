@@ -1,0 +1,26 @@
+.screen{
+    background-color: rgba(21, 21, 21, 0.75);
+    min-width: 320px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.img{
+    max-width: 1000px;
+}
+
+
+.loading{
+    font-size: clamp(1rem, 4.5vw, 4rem); 
+    color: white;
+    letter-spacing: clamp(1rem, 1.5rem, 2rem); 
+}

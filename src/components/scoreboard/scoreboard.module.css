@@ -1,0 +1,15 @@
+.scoreboard {
+    gap: 0.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 3rem 0.5rem 2rem;
+    box-shadow: 0 0 0.55rem 0 black;
+    border-radius: 0.5rem;
+    background: radial-gradient(rgb(78, 75, 75), transparent);
+  }
+  
+  .scoreboard h2 {
+    line-height: 1;
+  }

@@ -1,0 +1,16 @@
+.board {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  max-width: 1400px;
+  padding: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+  .board {
+    padding: 1rem;
+  }
+}
